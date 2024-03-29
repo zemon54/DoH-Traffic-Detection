@@ -31,6 +31,7 @@ data = data.dropna()
 sns.countplot(x='labels', data=data);
 plt.show()
 
+#Preprocessing
 le=LabelEncoder()
 # data = data.rename(columns={'DoH': 'labels'})
 data['SourceIP'] = le.fit_transform(data['SourceIP'])
